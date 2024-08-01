@@ -1,0 +1,150 @@
+/*
+I'm n0t a Frontend Developer 
+I was inspired by this page from Authlol.
+And I used ChatGpt so.....
+Idk 
+*/
+/* Global Styles */
+html, * {
+    cursor: url('./cursor.png'), default;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.bg {
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    right: -50%;
+    bottom: -50%;
+    width: 200%;
+    height: 200vh;
+    background: transparent url('./noise-transparent.png') repeat 0 0;
+    background-repeat: repeat;
+    animation: bg-animation .2s infinite;
+    opacity: .9;
+    visibility: visible;
+}
+
+.center {
+    position: fixed;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.video-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px; /* Space for the sentence below */
+}
+
+video {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 13px;
+    /* box-shadow: 0 150px 8px rgba(173, 29, 29, 0.233); */
+}
+
+/* Body Styles */
+body {
+    /* font-size: 2rem; */
+    font-family: Dancing Script;
+    max-width: 900px;
+    margin: auto;
+    background: #111;
+    color: #EEE;
+}
+
+/* Font Face */
+@font-face {
+    font-family: 'Dancing Script';
+    src: url('./fonts/DancingScript-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Keyframes for Animations */
+@keyframes flyup {
+    0% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-5000%); }
+}
+
+@keyframes bg-animation {
+    0% { transform: translate(0,0); }
+    10% { transform: translate(-5%,-5%); }
+    20% { transform: translate(-10%,5%); }
+    30% { transform: translate(5%,-10%); }
+    40% { transform: translate(-5%,15%); }
+    50% { transform: translate(-10%,5%); }
+    60% { transform: translate(15%,0); }
+    70% { transform: translate(0,10%); }
+    80% { transform: translate(-15%,0); }
+    90% { transform: translate(10%,5%); }
+    100% { transform: translate(5%,0); }
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 600px) {
+    body {
+        font-size: 1rem; /* Slightly smaller font size on mobile */
+    }
+
+    video {
+        max-width: 100%; /* Ensure video takes full width on mobile */
+         /* Smaller shadow on mobile  */
+        /* box-shadow: 0 125px 8px rgba(173, 29, 29, 0.233); */
+    }
+
+    .bg {
+        animation: bg-animation .5s infinite; /* Slower animation on mobile */
+    }
+
+    .center {
+        margin-top: 20%; /* Adjust vertical position for mobile */
+    }
+}
+
+@media (max-width: 720px) {
+    body {
+        font-size: 1rem; /* Further reduce font size for smaller screens */
+    }
+
+    video {
+        max-width: 100%; /* Full width on very small screens */
+    }
+
+    .center {
+        top: 30%; /* Further adjust vertical position for very small screens */
+    }
+}
+
+
+/*
+May I Will Change The Font Later.
+
+*/
+
+ .center p {
+    font-size: 30px;
+    color: white;
+    font-style: italic;
+    font-family: 'Dancing Script', cursive;
+} 
+   
+    
+.center p1 {
+    border-top: #111;
+    font-size: 15px;
+    color: white;
+    /* font-style: italic; */
+    font-family: monospace,cursive;
+} 
+ /* box-shadow: 0 80px 8px rgba(173, 29, 29, 0.233); */
