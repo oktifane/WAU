@@ -32,8 +32,8 @@ document.addEventListener("DOMContentLoaded", function() {
             textElement.style.color = 'white';
         });
     });
-});
-document.addEventListener('DOMContentLoaded', () => {
+
+
     const textElement = document.querySelector('p1');
     textElement.addEventListener('mouseover', () => {
         textElement.style.color = '#f39c12';
@@ -41,4 +41,31 @@ document.addEventListener('DOMContentLoaded', () => {
     textElement.addEventListener('mouseout', () => {
         textElement.style.color = 'white';
     });
+
+    
 });
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    const videoElement = document.getElementById('myVideo');
+    const textElementP = document.querySelector('.center p');
+    const textElementP1 = document.querySelector('.center p1');
+    
+    const videos = [
+      { src: './vid/waifu.vid', textP: 'Hmmm....', textP1: 'Waifu????!' },
+      { src: './vid/bird.vid', textP: 'Shhhh..', textP1: 'Birrrrrrrd 🐦!!' },
+      { src: './vid/fumi.vid', textP: 'Fumi Fumi...', textP1: 'Cay That U fumi' },
+      { src: './vid/JJK.vid', textP: 'Waifu?!', textP1: 'Nahh...🗿' }
+    ];
+  
+    // Generate a random number between 0 and 3
+    const randomIndex = Math.floor(Math.random() * 4);
+  
+    // Set the video source and text content
+    videoElement.querySelector('source').setAttribute('src', videos[randomIndex].src);
+    textElementP.textContent = videos[randomIndex].textP;
+    textElementP1.textContent = videos[randomIndex].textP1;
+  
+    // Load the new video source
+    videoElement.load();
+  });
+  
