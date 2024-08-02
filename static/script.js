@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const videos = [
       { src: './vid/waifu.vid', textP: 'Hmmm....', textP1: 'Waifu????!' },
       { src: './vid/bird.vid', textP: 'Shh....', textP1: 'Birrrrrrrd 🐦!!' },
-      { src: './vid/fumi.vid', textP: 'Fumi Fumi...', textP1: 'Cay chadat U Lob mi' },
+      { src: './vid/fumi.vid', textP: 'Cay chadat U Lob mi', textP1: 'Fumi Fumi...' },
       { src: './vid/JJK.vid', textP: 'Waifu?!', textP1: 'Nahh...🗿' }
     ];
   
