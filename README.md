@@ -1,6 +1,6 @@
 # 🌟 Hands-on Git Training Project 🌟
 
-Welcome to my simple project repository!
+Welcome to my simple Web project repository!
 
 This project is dedicated to honing my Git skills. Here, I experiment with various Git commands, workflows, and best practices. 
 
@@ -8,4 +8,4 @@ This project is dedicated to honing my Git skills. Here, I experiment with vario
 
 Thank you for stopping by!
 
-Happy coding! 😊
+Happy coding! 🗿
