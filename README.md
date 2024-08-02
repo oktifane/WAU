@@ -1,4 +1,4 @@
-# 🌟 Hands-on Git Training Project 🌟
+# 🗿🌟 Hands-on Git Training Project 🌟🗿
 
 Welcome to my simple Web project repository!
 
